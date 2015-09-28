@@ -24,8 +24,8 @@ namespace AssetProvisioning
             Name = "TestSecurityGroup",
             Owner = "TestSecurityGroup",
             AllowMembersEditMembership = true,
-            AllowRequestToJoinLeave = false,
-            //AllowRequestToJoinLeave = true,
+            //AllowRequestToJoinLeave = false,
+            AllowRequestToJoinLeave = true,
             Description = "test group",
         };
 
