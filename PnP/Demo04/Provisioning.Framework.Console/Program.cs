@@ -83,6 +83,7 @@ namespace Provisioning.Framework
             }
         }
 
+        
         private static string GetInput(string label, bool isPassword)
         {
             Console.ForegroundColor = ConsoleColor.White;
