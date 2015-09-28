@@ -72,26 +72,26 @@ namespace AssetProvisioning
                     provisioningService.RegisterModelHandlers(typeof(TaxonomyGroupModelHandler).Assembly);
                     provisioningService.DeployModel(SiteModelHost.FromClientContext(ctx), siteModel);
                 }
-                using (ClientContext ctx = GetAuthenticatedContext())
-                {
-                    TraceHelper.TraceInformation("Building web root files and modules");
+                //using (ClientContext ctx = GetAuthenticatedContext())
+                //{
+                //    TraceHelper.TraceInformation("Building web root files and modules");
 
-                    var provisioningService = new CSOMProvisionService();
-                    var siteModel = Model.FIles.BuildFilesModel();
+                //    var provisioningService = new CSOMProvisionService();
+                //    var siteModel = Model.FIles.BuildFilesModel();
 
-                    provisioningService.RegisterModelHandlers(typeof(TaxonomyGroupModelHandler).Assembly);
-                    provisioningService.DeployModel(WebModelHost.FromClientContext(ctx), siteModel);
-                }
-                using (ClientContext ctx = GetAuthenticatedContext())
-                {
-                    TraceHelper.TraceInformation("Building pages");
+                //    provisioningService.RegisterModelHandlers(typeof(TaxonomyGroupModelHandler).Assembly);
+                //    provisioningService.DeployModel(WebModelHost.FromClientContext(ctx), siteModel);
+                //}
+                //using (ClientContext ctx = GetAuthenticatedContext())
+                //{
+                //    TraceHelper.TraceInformation("Building pages");
 
-                    var provisioningService = new CSOMProvisionService();
-                    var siteModel = Model.Pages.BuildPagesModel();
+                //    var provisioningService = new CSOMProvisionService();
+                //    var siteModel = Model.Pages.BuildPagesModel();
 
-                    provisioningService.RegisterModelHandlers(typeof(TaxonomyGroupModelHandler).Assembly);
-                    provisioningService.DeployModel(WebModelHost.FromClientContext(ctx), siteModel);
-                }
+                //    provisioningService.RegisterModelHandlers(typeof(TaxonomyGroupModelHandler).Assembly);
+                //    provisioningService.DeployModel(WebModelHost.FromClientContext(ctx), siteModel);
+                //}
                 using (ClientContext ctx = GetAuthenticatedContext())
                 {
                     TraceHelper.TraceInformation("Building lookup model");
