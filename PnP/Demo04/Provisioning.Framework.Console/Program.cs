@@ -18,8 +18,8 @@ namespace Provisioning.Framework
         static void Main(string[] args)
         {
             bool interactiveLogin = true;
-            string templateSiteUrl = "https://mbakirov367.sharepoint.com/sites/demo4f";
-            string targetSiteUrl = "https://mbakirov367.sharepoint.com/sites/demo4";
+            string templateSiteUrl = "https://mbakirov367.sharepoint.com/sites/demo4";
+            string targetSiteUrl = "https://mbakirov367.sharepoint.com/sites/demo4f";
             string loginId = "mbakirov@mbakirov367.onmicrosoft.com";
 
             // Get pwd from environment variable, so that we do to need to show that.
@@ -67,7 +67,7 @@ namespace Provisioning.Framework
             var templates = provider.GetTemplates();
             foreach(var template1 in templates)
             {
-                Console.WriteLine("Found template with ID {0}", template1.ID);
+                Console.WriteLine("Found template with ID {0}", template1.Id);
             }
 
             // Get access to target site and apply template
