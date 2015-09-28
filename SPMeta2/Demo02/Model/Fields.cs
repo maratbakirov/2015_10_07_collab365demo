@@ -20,7 +20,7 @@ namespace Model
             Title = "MyTaxonomyField2",
             Group =  Consts.DefaultMetadataGroup,
             Id = new Guid("{29E4CBD2-6CA7-47E7-9B5B-FF7725949D58}"),
-            TermSetId = Taxonomy.Location.Id,
+            //TermSetId = Taxonomy.Location.Id,
             TermSetName = "Location",
             TermSetLCID = 1033,
             //TermId = Taxonomy.RootTerm.Id,
